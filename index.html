@@ -621,9 +621,10 @@
 					Username : "pranay.ali118@gmail.com",
 					Password : "5D6F0B25E6DCE6B23950319751180F5E0E8C",
 					To : 'pranay.ali118@gmail.com',
-					From : document.getElementById("email").value,
+					From : 'pranay.ali118@gmail.com',
 					Subject : "Subject:"+document.getElementById("subject").value,
-					Body : document.getElementById("body").value,
+					Body : "From: "+document.getElementById("email").value
+						+"<br> Messaage: "+document.getElementById("body").value,
 					}).then(
 					message => alert(message)
 					);
