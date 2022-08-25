@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 80%;
+  font-size: 16px;
+  color: white;
+  padding: 12px 40px 12px 40px;
+  border: 1px solid #c70039;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#myUL {
+  list-style-type: none;
+  height: 300px;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+#myUL li a {
+  border-top: 2px solid #c70039;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  background-color: black;
+  font-family: poppins;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #c70039;
+}
+
+#searchbar {
+	align-items:center;
+}

@@ -12,9 +12,11 @@
    <!--favicon-img-->
    <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/searchbar.css">
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="js/searchbar.js"></script>
 </head>
 <body>
     <!--contains all the div-->
@@ -463,6 +465,20 @@
         <div class="blog-header"> Explore</span>
             <span class ="header-caption">Choose the continent that<span class="color"> you want.</span></span></div>
 			<center><h1>Website In Progress</h1></center>
+			<div class="searchbar">
+			<center>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+			<ul id="myUL">
+			<li><a href="Continents\Asia\Destination Explorer - Asia.html" target="_blank">Asia</a></li>
+			<li><a href="Continents\Africa\Destination Explorer - Africa.html" target="_blank">Africa</a></li>
+			<li><a href="Continents\AustralliaOceania\Destination Explorer - AustralliaOceania.html" target="_blank">Australlia/Oceania</a></li>
+			<li><a href="Continents\Europe\Destination Explorer - Europe.html" target="_blank">Europe</a></li>
+			<li><a href="Continents\North America\Destination Explorer - North America.html" target="_blank">North America</a></li>
+			<li><a href="Continents\South America\Destination Explorer - South America.html" target="_blank">South America</a></li>
+			<li><a href="Continents\Antarctica\Destination Explorer - Antarctica.html" target="_blank">Antarctica</a></li>
+			</ul>
+			</center>
+			</div>
             <div class="blog-content">
                  <div class="blogs">
                      <a href="#">
