@@ -86,6 +86,9 @@ form button{
 .menubar .third-span::before{
 	background-color: #bc3908;
 }
+#myUL {
+	border-color: #bc3908;
+}
 @media all and (max-width: 550px) and (min-width: 5px){
     .service:hover .service-img img{
         box-shadow:0px 0px 0px 0px #c70039 ;

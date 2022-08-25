@@ -80,6 +80,9 @@ form button{
 #myUL li a {
 	border-top-color: #035aa6;
 }
+#myUL {
+	border-color: #035aa6;
+}
 .menubar .first-span::before{
 	background-color: #035aa6;
 }
