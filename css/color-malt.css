@@ -71,6 +71,12 @@
 form button{
     background: #00909e;
 }
+#myInput {
+	border-color: #00909e;
+}
+#myUL li a {
+	border-top-color: #00909e;
+}
 @media all and (max-width: 550px) and (min-width: 5px){
     .service:hover .service-img img{
         box-shadow:0px 0px 0px 0px #c70039 ;
