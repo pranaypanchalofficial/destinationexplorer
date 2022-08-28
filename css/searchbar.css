@@ -43,6 +43,7 @@
 
 #myUL li a:hover:not(.header) {
   background-color: #c70039;
+  transition: all .5s ease;
 }
 
 #searchbar {
