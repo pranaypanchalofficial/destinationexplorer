@@ -208,7 +208,6 @@ body{
 #navigation-bar img{
     height: 80px;
     position: absolute;
-    ;
     top: 15%;
     left: 2.5%;
     opacity: .8;
@@ -216,7 +215,8 @@ body{
 }
 #navigation-bar img:hover{
     opacity: 1;
-    transform:rotate(-45deg);
+	height: 95px;
+    transform:rotate(-405deg);
 }
 .header-image img{
     height: 100vh;
@@ -224,7 +224,6 @@ body{
 }
 .header-image{
     float: right;
-    height: auto;
     background-size: cover;
     background-position: center;
     width: 40%;   
@@ -260,6 +259,10 @@ body{
     font-weight:700;
     font-family: poppins;
     font-size: 55px;
+	transition: all .4s ease;
+}
+.header-content .firstline:hover{
+	font-size: 65px;
 }
 .header-content .secondline{
     z-index: 2;
