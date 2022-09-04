@@ -922,7 +922,7 @@ padding-bottom: 40px;
     width: 50px;
     display: block;
     border-radius: 50%;
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
     background: transparent;
     pointer-events: none;
     position: fixed;
