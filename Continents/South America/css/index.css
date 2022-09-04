@@ -1,9 +1,3 @@
-/*!
-  * Item: Willy Wonka Theme
-  * Description: Personal Portfolio Website Template
-  * Author/Developer: Sujal
-  * Version: v1
-  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
@@ -53,7 +47,7 @@ input[type=number] {
       font-family: poppins;
       background-color: #202020;
       color: whitesmoke;
-      font-size: 70px;
+      font-size: 55px;
       width: 100%;
   }
 body{
@@ -66,7 +60,7 @@ body{
 #header{
     background:#171717;
     height: 100vh;
-    width: 100%;;
+    width: 100%;
     overflow: hidden;
     animation: scale 1.5s ease;
     position:relative;
@@ -114,7 +108,7 @@ body{
 .menubar span{
     position: relative;
     background-color:transparent;
-    height:2px;
+    height:4px;
     width: 20px;
     display: block;
     margin:6px;
@@ -130,7 +124,7 @@ body{
     width: 50%;
     top:0;
     right:0;
-    background-color:whitesmoke;
+    background-color:#c70039;
     transition: all .5s ease;
 
 }
@@ -144,7 +138,7 @@ body{
     width: 75%;
     top:0;
     right:0;
-    background-color:whitesmoke;
+    background-color:#c70039;
     transition: all .3s ease;
 }
 .menubar .third-span{
@@ -157,7 +151,7 @@ body{
     width: 100%;
     top:0;
     right:0;
-    background-color:whitesmoke;
+    background-color:#c70039;
     transition: all .3s ease;
 }
 .menubar:hover .second-span::before , .menubar:hover .first-span::before {
@@ -263,7 +257,7 @@ body{
     z-index: 2;
     font-weight:700;
     font-family: poppins;
-    font-size: 65px;
+    font-size: 55px;
 }
 .header-content .secondline{
     z-index: 2;
@@ -691,7 +685,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:95%;
+    width:75%;
     border-radius: 10px;
     background: #c70039;
 }
@@ -705,11 +699,11 @@ body{
     font-family: poppins;
     justify-content: center;
     transition: all .4s ease;
-    width:90%;
+    width:80%;
     border-radius: 10px;
     background: #c70039;
 }
-.adobe-progress{
+.blender-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -718,11 +712,11 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:83%;
+    width:60%;
     border-radius: 10px;
     background: #c70039;
 }
-.php-progress{
+.unrealengine-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -730,12 +724,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:85%;
+    width:40%;
     border-radius: 10px;
     background: #c70039;
     transition: all .4s ease;
 }
-.jquery-progress{
+.cplusplus-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -748,7 +742,7 @@ body{
     border-radius: 10px;
     background: #c70039;
 }
-.seo-progress{
+.database-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -756,7 +750,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:84%;
+    width:65%;
     border-radius: 10px;
     transition: all .4s ease;
     background: #c70039;
@@ -780,7 +774,7 @@ body{
 .header-caption{
     opacity:.8;
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     font-family: raleway;
     padding: 8px;
     padding-top: 15px;
@@ -1399,7 +1393,7 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 100vh;
         width: 200%;
         background-color: #c70039;
         opacity: 1;
@@ -1813,7 +1807,7 @@ for tabs and large phones
 
 
 
-@media all and (max-width: 1025px) and (min-width: 551px){
+@media all and (max-width: 1025px) and (min-width: 550px){
     .header-content{
         height: 100vh;
         width: 100%;
@@ -1854,7 +1848,7 @@ for tabs and large phones
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 100vh;
         width: 200%;
         background-color: #c70039;
         opacity: 1;
@@ -1934,7 +1928,7 @@ for tabs and large phones
     }
     .about-img img{
         width: 100%;
-        height:380px;
+        height:300px;
         padding: 30px;
         border-radius: 40px;
     }
@@ -2561,4 +2555,117 @@ for tabs and large phones
         border-radius: 8px;
         transition: all .4s ease;
     }
+}
+/*---*/
+:root {
+  --surface-color: #c70039;
+  --curve: 40;
+}
+* {
+  box-sizing: border-box;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }

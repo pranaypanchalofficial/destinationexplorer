@@ -89,6 +89,9 @@ form button{
 .menubar .third-span::before{
 	background-color: #c70039;
 }
+:root{
+	--surface-color: #c70039;
+}
 @media all and (max-width: 550px) and (min-width: 5px){
     .service:hover .service-img img{
         box-shadow:0px 0px 0px 0px #c70039 ;

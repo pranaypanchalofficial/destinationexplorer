@@ -71,6 +71,9 @@
 form button{
     background: #035aa6;
 }
+:root{
+	--surface-color: #035aa6;
+}
 @media all and (max-width: 550px) and (min-width: 5px){
     .service:hover .service-img img{
         box-shadow:0px 0px 0px 0px #c70039 ;
