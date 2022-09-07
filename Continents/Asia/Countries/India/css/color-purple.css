@@ -74,6 +74,22 @@ form button{
 :root{
 	--surface-color: #481380;
 }
+.header,
+.footer{
+	color: #481380;
+}
+.header{
+	border-bottom: 1px solid #481380;
+}
+.nav{
+	border-right: 1px solid #481380;
+}
+.nav__item:not(:last-child){
+	border-bottom: 1px solid #481380;
+}
+.nav__link:hover, .nav__link:focus {
+	background-color: #481380;
+}
 @media all and (max-width: 550px) and (min-width: 5px){
     .service:hover .service-img img{
         box-shadow:0px 0px 0px 0px #c70039 ;

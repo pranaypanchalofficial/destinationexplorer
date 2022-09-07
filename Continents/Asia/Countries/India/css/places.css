@@ -36,11 +36,11 @@ p {
 
 .header,
 .footer {
-  font-size: 0.75rem;
+  font-size: 20px;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #a0a0a0;
+  color: #c70039;
 }
 
 .header {
@@ -48,7 +48,7 @@ p {
   justify-content: space-between;
   grid-column: 1/-1;
   padding: 0 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #c70039;
 }
 .header__left, .header__right {
   display: flex;
@@ -104,12 +104,12 @@ p {
 
 .nav {
   display: none;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid #c70039;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 .nav__item:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #c70039;
 }
 .nav__link {
   display: block;
@@ -117,7 +117,7 @@ p {
   font-weight: 200;
 }
 .nav__link:hover, .nav__link:focus {
-  background-color: rgba(255, 255, 255, 0.035);
+  background-color: #c70039;
 }
 @media screen and (min-width: 1024px) {
   .nav {
