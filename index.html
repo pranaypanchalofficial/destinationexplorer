@@ -620,18 +620,18 @@
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form id="myForm" onsubmit="sendEmail(); reset(); return false;">
+                 <form id="myForm" method="POST" onsubmit="sendEmail(); reset(); return false;" target="_blank" action="http://localhost/Destination%20Explorer/contact_form.php">
                     <div class="input-line">
-                        <input id="name" type="text" placeholder="Name" class="input-name" required>
-                        <input id="email" type="email" placeholder="Email"  class="input-name" required>
+                        <input id="name" name="txtname" type="text" placeholder="Name" class="input-name" required>
+                        <input id="email" name="txtemail" type="email" placeholder="Email"  class="input-name" required>
                     </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject" required>
-                    <textarea id ="body" class="input-textarea" placeholder="message" required></textarea>
+                    <input type="text" name="txtsubject" id="subject" placeholder="subject" class="input-subject" required>
+                    <textarea id ="body" name="txtmessage" class="input-textarea" placeholder="message" required></textarea>
                     <button type="submit" id ="submit" value="send">Submit</button>
                  </form>
                
              </div>
-			<script>
+			<!--<script>
 			function sendEmail(){
 				Email.send({
 					Host : "smtp.elasticemail.com",
@@ -647,7 +647,7 @@
 					message => alert("Sent success")
 					);
 				}
-			</script>		
+			</script>-->		
             <!--Contact form-->
             <!--Contact information-->
              <div class="contact-info">
