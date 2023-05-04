@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Destination Explorer - Hotel Booking</title>
+    <style>
+      body {
+        background-color: #171717;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        background-color: #171717;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #999;
+        max-width: 500px;
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        color: #c70039;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #c70039;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Book A Hotel Now!</h1>
+    <form action="http://localhost/Destination%20Explorer/booking_form.php" method="POST" target="_blank" >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="txtname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="txtemail" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" name="txtphone" required>
+
+      <label for="place">Place:</label>
+      <select id="place" name="txtplace" required>
+        <option value="">Select a Place</option>
+        <option value="Gate Way Of India">Gate Way Of India</option>
+        <option value="Goa">Goa</option>
+        <option value="Golden Temple">Golden Temple</option>
+        <option value="Kutch">Kutch</option>
+        <option value="Ladakh">Ladakh</option>
+        <option value="Red Fort">Red Fort</option>
+		<option value="Statue Of Unity">Statue Of Unity</option>
+		<option value="Taj Mahal">Taj Mahal</option>
+      </select>
+
+ 	<label for="price-range">Price Range:</label>
+      <select id="price-range" name="txtprice-range" required>
+        <option value="">Select a Price Range</option>
+        <option value="₹0 - ₹1000">₹0 - ₹1000</option>
+        <option value="₹1000 - ₹3000">₹1000 - ₹3000</option>
+        <option value="₹3000 - ₹7000">₹3000 - ₹7000</option>
+        <option value="₹10000+">₹10000+</option>
+      </select>
+
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="txtcheckin" required>
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="txtcheckout" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="txtguests" required>
+
+      <label for="room-type">Room Type:</label>
+      <select id="room-type" name="txtroom-type" required>
+        <option value="">Select a Room Type</option>
+        <option value="standard">Standard Room</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="suite">Suite</option>
+      </select>
+
+      <input type="submit" value="Book Now">
+    </form>
+   </body>
+</html>
